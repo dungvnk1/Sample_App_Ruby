@@ -1,2 +1,5 @@
 vi:
   hello: "Xin chào"
+  home:
+   welcome: "Chào mừng đến với Sample App"
+   content: "Đây là trang chủ cho ứng dụng mẫu với"
