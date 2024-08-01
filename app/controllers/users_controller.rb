@@ -38,6 +38,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+<<<<<<< HEAD
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
@@ -54,6 +55,8 @@ class UsersController < ApplicationController
     redirect_to users_url, status: :see_other
   end
 
+=======
+>>>>>>> f86ea46 (Finish chapter9)
   private
     def user_params
       params.require(:user).permit(:name, :email, :password,

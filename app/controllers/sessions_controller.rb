@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
 <<<<<<< HEAD
@@ -23,6 +24,14 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to user
 >>>>>>> b26ad6c (Add gem config)
+=======
+    ?user = User.find_by(email: params[:session][:email].downcase)
+    if ?user && ?user.authenticate(params[:session][:password])
+      reset_session
+      params[:session][:remember_me] == '1' ? remember(?user) : forget(?user)
+      log_in ?user
+      redirect_to ?user
+>>>>>>> f86ea46 (Finish chapter9)
     else
       flash.now[:danger] = "Invalid email or password"
       render 'new', status: :unprocessable_entity
@@ -31,6 +40,9 @@ class SessionsController < ApplicationController
 
   def destroy
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f86ea46 (Finish chapter9)
     log_out if logged_in?
     redirect_to root_url, status: :see_other
 =======
