@@ -24,7 +24,11 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+<<<<<<< HEAD
     log_out if logged_in?
+=======
+    log_out
+>>>>>>> 427aa6c (Finish chapter8)
     redirect_to root_url, status: :see_other
   end
 end

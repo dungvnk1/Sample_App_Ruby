@@ -38,6 +38,7 @@ module SessionsHelper
     !current_user.nil?
   end
 
+<<<<<<< HEAD
   # Forgets a persistent session.
   def forget(user)
     user.forget
@@ -56,4 +57,11 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
+=======
+  # Logs out the current user.
+  def log_out
+    reset_session
+    @current_user = nil
+  end
+>>>>>>> 427aa6c (Finish chapter8)
 end

@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
+<<<<<<< HEAD
       # reset_session
       # log_in @user
       # flash[:success] = "Welcome to the Sample App!"
@@ -26,6 +27,12 @@ class UsersController < ApplicationController
       @user.send_activation_email
       flash[:info] = "Please check your email to activate your account."
       redirect_to root_url
+=======
+      reset_session
+      log_in @user
+      flash[:success] = "Welcome to the Sample App!"
+      redirect_to @user
+>>>>>>> 427aa6c (Finish chapter8)
     else
       render 'new', status: :unprocessable_entity
     end
