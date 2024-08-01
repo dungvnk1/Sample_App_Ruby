@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+<<<<<<< HEAD
   attr_accessor :remember_token, :activation_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -69,4 +70,14 @@ class User < ApplicationRecord
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(activation_token)
     end
+=======
+    before_save {self.email = email.downcase}
+    validates :name,    presence: true, length: { maximum: Settings.users.max_name_length }
+    VALID_EMAIL_REGEX = Regexp.new(Settings.users.email_regex)
+    validates :email,   presence: true, length: { maximum: Settings.users.max_email_length },
+                        format: { with: VALID_EMAIL_REGEX },
+                        uniqueness: Settings.users.email_uniqueness
+    has_secure_password
+    validates :password, presence: true, length: { minimum: Settings.users.password_min_length }
+>>>>>>> b26ad6c (Add gem config)
 end

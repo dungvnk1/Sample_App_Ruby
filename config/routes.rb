@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get    "/login",   to: "sessions#new"
   post   "/login",   to: "sessions#create"
   delete "/logout",  to: "sessions#destroy"
+<<<<<<< HEAD
   resources :users    
   resources :account_activations, only: [:edit]
+=======
+  resources :users
+>>>>>>> b26ad6c (Add gem config)
 end

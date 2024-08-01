@@ -9,7 +9,10 @@ class UsersController < ApplicationController
 
   def show 
     @user = User.find_by(params[:id])
+<<<<<<< HEAD
     redirect_to root_url and return unless FILL_IN
+=======
+>>>>>>> b26ad6c (Add gem config)
   end
 
   def new
