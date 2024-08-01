@@ -3,7 +3,10 @@ users:
  max_email_length: 255
  password_min_length: 6
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  email_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 >>>>>>> b26ad6c (Add gem config)
+=======
+>>>>>>> 427aa6c (Finish chapter8)
  email_uniqueness: true

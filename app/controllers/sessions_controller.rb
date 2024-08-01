@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
-<<<<<<< HEAD
       if user.activated?
         forwarding_url = session[:forwarding_url]
         reset_session
@@ -18,11 +17,6 @@ class SessionsController < ApplicationController
         flash[:warning] = message
         redirect_to root_url
       end
-=======
-      reset_session
-      log_in user
-      redirect_to user
->>>>>>> b26ad6c (Add gem config)
     else
       flash.now[:danger] = "Invalid email or password"
       render 'new', status: :unprocessable_entity
@@ -30,10 +24,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-<<<<<<< HEAD
-    log_out if logged_in?
+    log_out
     redirect_to root_url, status: :see_other
-=======
->>>>>>> b26ad6c (Add gem config)
   end
 end
