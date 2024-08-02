@@ -7,12 +7,16 @@ class UsersController < ApplicationController
     @users = User.where(activated: FILL_IN).paginate(page: params[:page])
   end
 
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :correct_user,   only: [:edit, :update]
+  before_action :admin_user,     only: :destroy
+
+  def index
+    @users = User.paginate(page: params[:page])
+  end
+
   def show 
     @user = User.find_by(params[:id])
-<<<<<<< HEAD
-    redirect_to root_url and return unless FILL_IN
-=======
->>>>>>> b26ad6c (Add gem config)
   end
 
   def new
