@@ -2,4 +2,5 @@ users:
  max_name_length: 50
  max_email_length: 255
  password_min_length: 6
+ VALID_EMAIL_REGEX: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
  email_uniqueness: true
