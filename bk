@@ -1,0 +1,134 @@
+[33mcommit 1a61e0988b434eb0ba81225e1ca5f3e0b28a7931[m[33m ([m[1;36mHEAD -> [m[1;32mchapter8+9[m[33m, [m[1;31morigin/chapter8+9[m[33m, [m[1;32mbeforemerge[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Aug 2 13:51:00 2024 +0700
+
+    Finish chapter11
+
+[33mcommit 6a68ba340baf5ed1b3db656a7032692501292f07[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Aug 2 11:02:38 2024 +0700
+
+    Finish chapter10
+
+[33mcommit f86ea46678bdbbbef531285dd29d3a8908015e9d[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Thu Aug 1 17:45:11 2024 +0700
+
+    Finish chapter9
+
+[33mcommit 427aa6c40e9c4e254c261a3988ba8217e0e6b9b8[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Thu Aug 1 11:12:49 2024 +0700
+
+    Finish chapter8
+
+[33mcommit b26ad6cecb0e5593f32aea3392d9846f62ea5d7b[m[33m ([m[1;31morigin/chapter6[m[33m, [m[1;32mchapter6[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Thu Aug 1 08:55:26 2024 +0700
+
+    Add gem config
+
+[33mcommit b039f34c3a9de712336a5e8daf6c4d831dc08488[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Tue Jul 30 17:05:15 2024 +0700
+
+    Chapter7 Finish user signup
+
+[33mcommit 8d190cdaf53bc05acb950e4c951beda6fb934ab8[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Tue Jul 30 15:10:24 2024 +0700
+
+    Finish chapter6 Modeling Users
+
+[33mcommit ccb5a2b522e38a836a1bd71547bedd3996cc4fa8[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Tue Jul 30 11:23:38 2024 +0700
+
+    update i18n using
+
+[33mcommit d2b8ec9af8ffaccfb0ac8ce1099991879038e4b3[m
+Merge: 1d2f292 27eebfc
+Author: dungvnk1 <126397851+dungvnk1@users.noreply.github.com>
+Date:   Tue Jul 30 10:55:56 2024 +0700
+
+    Merge pull request #3 from dungvnk1/chapter5
+    
+    Finish layout and routes
+
+[33mcommit 27eebfc98c79b432a7a7a679be6d64f156b3d955[m[33m ([m[1;31morigin/chapter5[m[33m, [m[1;32mchapter5[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Mon Jul 29 15:57:05 2024 +0700
+
+    Finish layout and routes
+
+[33mcommit 1d2f2927a9bc0e35b3095621b1431cd04a7145f7[m
+Merge: a435522 0fdfd8d
+Author: dungvnk1 <126397851+dungvnk1@users.noreply.github.com>
+Date:   Mon Jul 29 14:09:18 2024 +0700
+
+    Merge pull request #2 from dungvnk1/chapter4
+    
+    Add full_title helper
+
+[33mcommit 0fdfd8d3a9645007f3c883a4d9511027c869ff91[m[33m ([m[1;31morigin/chapter4[m[33m, [m[1;32mchapter4[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Mon Jul 29 14:07:28 2024 +0700
+
+    Add full_title helper
+
+[33mcommit a43552239a9b75e91f80e5522e6f92cabd78be35[m
+Merge: 1a10259 6b301b2
+Author: dungvnk1 <126397851+dungvnk1@users.noreply.github.com>
+Date:   Fri Jul 26 17:21:52 2024 +0700
+
+    Merge pull request #1 from dungvnk1/chapter3
+    
+    Chapter3 - Static Pages
+
+[33mcommit 6b301b259b394bd43e72d03c4f9e6c21c1aec44d[m[33m ([m[1;31morigin/chapter3[m[33m, [m[1;32mchapter3[m[33m)[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 17:12:17 2024 +0700
+
+    Chapter3 update using i18n
+
+[33mcommit 36d820a2c2a51608778c726f568cdb2c2ab0423f[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 15:56:44 2024 +0700
+
+    Chapter3 update home page
+
+[33mcommit a0c9f671ba378fb5750eececda041af2def12c2c[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 15:13:59 2024 +0700
+
+    Update convention
+
+[33mcommit faa4e62aa6f7efeb0dbca2461109e345238aafc3[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 14:37:12 2024 +0700
+
+    Finish static pages
+
+[33mcommit 09ddd8b0a4c693561ad93d5474020201176fa0ca[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 14:24:13 2024 +0700
+
+    Add static pages controller
+
+[33mcommit f74860b3524cfe0a37f11b5ae01da53bf6423292[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 14:21:59 2024 +0700
+
+    Add Hello
+
+[33mcommit 1a102590dda103e33250aa79de752070c9a60020[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 14:03:42 2024 +0700
+
+    Init Repo
+
+[33mcommit c7b7c9f1fa827fa7b921964d829f406b88e33174[m
+Author: dungvnk1 <vunangdungdta@gmail.com>
+Date:   Fri Jul 26 13:59:47 2024 +0700
+
+    Init Repo
