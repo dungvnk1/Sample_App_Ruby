@@ -1,5 +1,7 @@
 class User < ApplicationRecord
+    attr_accessor :remember_token, :activation_token
     before_save {self.email = email.downcase}
+    before_create :create_activation_digest
     validates :name,    presence: true, length: { maximum: Settings.users.max_name_length }
     VALID_EMAIL_REGEX = Regexp.new(Settings.users.email_regex, Regexp::IGNORECASE)
     validates :email,   presence: true, length: { maximum: Settings.users.max_email_length },
