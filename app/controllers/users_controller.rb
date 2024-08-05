@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  def show 
-    @user = User.find_by(params[:id])
-  end
+  before_action set_user, only: [:show, :edit]
+
+  def show; end
 
   def new
     @user = User.new
@@ -19,9 +19,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
   private
-    def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+  def set_user
+    @user = User.find_by(id: params[:id])
+    unless @user
+      flash[:alert] = "User not found"
+      redirect_to root_path
     end
+  end
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password,
+                                   :password_confirmation)
+  end
 end
