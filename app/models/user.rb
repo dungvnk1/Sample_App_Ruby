@@ -3,7 +3,7 @@ class User < ApplicationRecord
   before_save   :downcase_email
   before_create :create_activation_digest
   validates :name,    presence: true, length: { maximum: Settings.users.max_name_length }
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  VALID_EMAIL_REGEX = Regexp.new(Settings.users.VALID_EMAIL_REGEX, Regexp::IGNORECASE)
   validates :email,   presence: true, length: { maximum: Settings.users.max_email_length },
                         format: { with: VALID_EMAIL_REGEX },
                         uniqueness: Settings.users.email_uniqueness
