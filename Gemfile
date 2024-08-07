@@ -29,6 +29,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "bullet"
   gem "web-console", "4.2.0"
 end
 
