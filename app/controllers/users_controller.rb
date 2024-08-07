@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def show 
-    @user = User.includes(:microposts).find_by(params[:id])
-    @microposts = @user.microposts.paginate(page: params[:page])
+    @user = User.find_by(params[:id])
+    @microposts = @user.microposts.includes(:image_attachment).paginate(page: params[:page])
   end
 
   def new
