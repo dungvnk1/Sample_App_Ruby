@@ -30,7 +30,59 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+ global:
+  controllers:
+   accounts:
+    accActive: "Account activated!"
+    accInactive: "Invalid activation link!"
+   sessions:
+    mesAcc: "Account not activated. "
+    mesLink: "Check your email for the activation link."
+    mesMail: "Invalid email or password!"
+   users:
+    flLink: "Please check your email to activate your account."
+    flProfile: "Profile updated"
+    flDelete: "User deleted"
+    flLogin: "Please log in."
+  mailers:
+   mailActive: "Account activation"
+ layouts:
+  _header:
+   home: "Home"
+   help: "Help"
+   users: "Users"
+   accounts: "Accounts"
+   language: "Language"
+   login: "Log in"
+   eng: "English"
+   vie: "Vietnamese"
+   profile: "Profile"
+   settings: "Settings"
+   logout: "Log out"
+  _footer:
+   about: "About"
+   contact: "Contact"
+   news: "News"
+ static_pages:
   home:
    welcome: "Welcome to the Sample App"
    content: "This is the home page for the sample application with"
+   signup: "Sign up now!"
+  help:
+   title: "Help"
+   content: "Get help on the Ruby on Rails Tutorial at the"
+  sessions:
+   email: "Email"
+   password: "Password"
+   rememberContent: "Remember me on this computer"
+   login: "Log in"
+   newUser: "New user?"
+   signup: "Sign up now?"
+  users:
+   _form:
+    signup: "Sign up"
+    update: "Update your profile"
+    name: "Name"
+    password: "Password"
+    passwordConfirm: "Password Confirmation"
+    submit: "Submit"

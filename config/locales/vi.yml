@@ -1,5 +1,57 @@
 vi:
-  hello: "Xin chào"
-  home:
+ global:
+  controllers:
+   accounts:
+    accActive: "Tài khoản đã được kích hoạt!"
+    accInactive: "Link kích hoạt không hợp lệ!"
+   sessions:
+    mesAcc: "Tài khoản chưa được kích hoạt. "
+    mesLink: "Kiểm tra email để nhận link kích hoạt tài khoản."
+    mesMail: "Email hoặc mật khẩu không hợp lệ!"
+   users:
+    flLink: "Làm ơn hãy check email của bạn để kích hoạt tài khoản."
+    flProfile: "Hồ sơ đã được cập nhật."
+    flDelete: "Người dùng đã bị xóa"
+    flLogin: "Làm ơn hãy đăng nhập."
+  mailers:
+   mailActive: "Kích hoạt tài khoản"
+ layouts:
+  _header:
+   home: "Trang chủ"
+   help: "Trợ giúp"
+   users: "Người dùng"
+   accounts: "Tài khoản"
+   language: "Ngôn ngữ"
+   login: "Đăng nhập"
+   eng: "Tiếng Anh"
+   vie: "Tiếng Việt"
+   profile: "Hồ sơ"
+   settings: "Cài đặt"
+   logout: "Đăng xuất"
+  _footer:
+   about: "Về chúng tôi"
+   contact: "Liên hệ"
+   news: "Tin tức"
+ static_pages:
+  home: 
    welcome: "Chào mừng đến với Sample App"
    content: "Đây là trang chủ cho ứng dụng mẫu với"
+   signup: "Đăng ký ngay!"
+  help:
+   title: "Trợ giúp"
+   content: "Nhận sự hỗ trợ với "
+  sessions:
+   email: "Email"
+   password: "Mật khẩu"
+   rememberContent: "Ghi nhớ tôi trên thiết bị này"
+   login: "Đăng nhập"
+   newUser: "Người dùng mới?"
+   signup: "Đăng ký ngay?"
+  users:
+   _form:
+    signup: "Đăng ký"
+    update: "Cập nhật hồ sơ"
+    name: "Tên"
+    password: "Mật khẩu"
+    passwordConfirm: "Xác nhận mật khẩu"
+    submit: "Gửi"
