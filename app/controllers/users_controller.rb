@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show 
-    @user = User.find_by(params[:id])
+    @user ||= User.find_by(params[:id])
     @microposts = @user.microposts.includes(:image_attachment).paginate(page: params[:page])
   end
 
@@ -20,12 +20,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
-      # reset_session
-      # log_in @user
-      # flash[:success] = "Welcome to the Sample App!"
-      # redirect_to @user
       @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
+      flash[:info] = I18n.t('global.controllers.users.flLink')
       redirect_to root_url
     else
       render 'new', status: :unprocessable_entity
@@ -39,7 +35,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      flash[:success] = "Profile updated"
+      flash[:success] = I18n.t('global.controllers.users.flProfile')
       redirect_to @user
     else
       render 'edit', status: :unprocessable_entity
@@ -48,7 +44,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = I18n.t('global.controllers.users.flDelete')
     redirect_to users_url, status: :see_other
   end
 
@@ -74,6 +70,15 @@ class UsersController < ApplicationController
 
     # Before filters
 
+    # Confirms a logged-in user.
+    def logged_in_user
+      unless logged_in?
+        store_location
+        flash[:danger] = I18n.t('global.controllers.users.flLogin')
+        redirect_to login_url, status: :see_other
+      end
+    end
+  
     # Confirms the correct user.
     def correct_user
       @user = User.find(params[:id])
